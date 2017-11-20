@@ -1,0 +1,425 @@
+html,body {
+  background-color: #f7f7f7;
+}
+.jdm {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 在移动端会有一些元素出现手指触摸之后出现背景颜色 去除掉 */
+/* 在ios系统中 所有input都会自带一个内阴影  你通过很多方法都去除不掉 */
+/* -webkit-appearance: none; 可以去除掉内阴影 */
+/*   */
+* {
+  -webkit-tap-highlight-color: transparent;
+  
+}
+/* 顶部所搜 */
+.jdm-search{
+	/* position: fixed; */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #c91523;
+	/* z-index: 10; */
+}
+.jdm-search .search-box{
+	width: 100%;
+	height: 100%;
+	padding-left:75px;
+	padding-right: 50px;
+	box-sizing:border-box;
+	position: relative;
+}
+
+.jdm-search .logo{
+	display: block;
+	position: absolute;
+	top: calc((40px - 21px) / 2);
+	left: calc((75px - 56px) / 2);
+	width: 56px;
+	height: 21px;
+	background-position: 0 -109px;
+	background-image: url("../images/jd-sprites.png");
+	background-size: 200px 200px;
+}
+ .jdm-search .search-box i{
+ 	position: absolute;
+ 	top:10px;
+ 	left: 80px;
+ 	width: 20px;
+ 	height: 20px;
+ 	background-position: -60px -109px;
+ 	background-image: url("../images/jd-sprites.png");
+	background-size: 200px 200px;
+ }
+.jdm-search .search-box input{
+	width: 100%;
+	height: 30px;
+	border: 1px solid #ccc;
+	padding:0 25px;
+	margin-top:5px;
+	box-sizing:border-box;
+	border-radius: 15px;
+	font-size: 14px;
+	line-height: 30px;
+}
+.jdm-search .login{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width:50px;
+	height: 40px;
+	text-align: center; 
+	line-height: 40px;
+	font-size: 16px;
+	color: #fff;
+}
+/* 轮播图 */
+.pic{
+	width: 100%;
+}
+.pic img{
+	width: 100%;
+	vertical-align:middle;
+}
+/* 导航 */
+.nav{
+	width: 100%;
+	padding-top: 10px;
+	background-color: #fff;
+}
+.nav ul{
+	width: 100%;
+	overflow: hidden;
+}
+.nav li{
+	float: left;
+	width: 25%;
+}
+.nav a{
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.nav img{
+	width: 40px;
+	height: 40px;
+	padding-bottom: 10px;
+}
+.nav strong{
+	display: block;
+	text-align: center;
+	font-weight: normal;
+}
+
+
+/* 秒杀 */
+.seckill{
+	width: 100%;
+	padding:0 10px;
+	margin-top: 5px;
+	box-sizing:border-box;
+	background-color: #fff;
+}
+.seckill .seckill-title{
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+}
+.seckill .seckill-title h2{
+	position: relative;
+	float: left;
+	padding-left: 24px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #c91523;
+	font-weight: normal;
+}
+.seckill .seckill-title h2:before{
+	content: '';
+	position: absolute;
+	top: calc((40px - 26px) / 2);
+	left: 2px;
+	width: 20px;
+	height: 26px;
+	background-position: -84px -107px;
+ 	background-image: url("../images/jd-sprites.png");
+	background-size: 200px 200px;
+}
+.seckill .seckill-title .seckill-time{
+	float: left;
+	padding-top: 14px;
+	padding-left: 3px;
+	margin-right: 10px;
+}
+.seckill .seckill-title .seckill-time span{
+	display: block;
+	float: left;
+	top: 20;
+	background-color: #000;
+	color: #fff;
+	border-radius: 15px;
+	/* left: 0; */
+
+}
+.seckill .seckill-title .seckill-time span:nth-child(3n){
+background-color: #fff;
+color: #000;
+margin: 0 2px;
+}
+.seckill .seckill-title .seckill-time span:nth-child(3n+1){
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	padding-left: 2px;
+}
+.seckill .seckill-title .seckill-time span:nth-child(3n+2){
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	padding-right: 2px;
+}
+.seckill .seckill-title .seckill-more{
+	float: right;
+	line-height: 40px;
+	
+
+}
+
+.seckill-content{
+	padding: 10px 0px;
+	margin-top:20px;
+	width: 100%；
+}
+.seckill-content ul{
+	width: 100%;
+	overflow: hidden;
+}
+.seckill-content li{
+	width: 33.33333%;
+	float: left;
+	padding: 0 10px;
+	box-sizing:border-box;
+}
+.seckill-content a{
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.seckill-content img{
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+.seckill-content b{
+	position: absolute;
+	font-weight: normal;
+	bottom: 0;
+	right: 0;
+	/* padding: 4px 5px; */
+	width: 34px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background-color: orange;
+	color: #fff;
+	border-radius: 50%;	
+}
+.seckill-content .price{
+	text-align: center;
+}
+.seckill-content .price span{
+	display: block;
+}
+.seckill-content .price span.new{
+	color: #c91523;
+}
+.seckill-content .price span.old{
+	text-decoration: line-through;
+	color: #666;
+}
+
+/* 会场 */
+.meeting{
+	position: relative;
+	width: 100%;
+}
+.meeting img{
+	width: 100%;
+	vertical-align: middle;
+}
+.meeting ul{
+	position: absolute;
+	left: 0;
+	bottom: 8px;
+	padding: 0 10px;
+	box-sizing:border-box;
+	width: 100%;
+	overflow: hidden;
+}
+.meeting li{
+	float: left;
+	width: 50%;
+}
+
+/* 热卖 */
+.hot-buy{
+	width: 100%;
+}
+.hot-buy ul{
+	width: 100%;
+	overflow: hidden;
+}
+.hot-buy li{
+	float: left;
+	width: 100%;
+	font-size: 0;
+}
+.hot-buy li:first-child a{
+	display: inline-block;
+	width: 33.333%;
+
+}
+.hot-buy li:nth-child(2){
+	/* float: left; */
+	width: 100%;
+	font-size: 0;
+
+}
+.hot-buy li:nth-child(2) a{
+	/* display: block; */
+	display: inline-block;
+
+	width: 50%;
+}
+.hot-buy li:nth-child(3){
+	/* float: left; */
+	width: 100%;
+	font-size: 0;
+
+}
+.hot-buy li:nth-child(3) a{
+	/* display: block; */
+	display: inline-block;
+
+	width: 50%;
+}
+.hot-buy img{
+	display: inline-block;
+	width: 100%;
+}
+/* 广告 */
+.gg{
+	width: 100%;
+	background-color: #ccc;
+	box-sizing:border-box;
+	padding: 10px;
+}
+.gg a{
+	display: block;
+	width: 100%;
+}
+.gg img{
+	width: 100%;
+}
+.feature-mar{
+	width: 100%;
+}
+h4{
+	display: block;
+	/* width: 100%; */
+	height: 40px;
+	font-size: 15px;
+	color: #c91523;
+	line-height: 40px;
+	margin-left: 10px;
+	font-weight: normal;
+}
+.feature-mar ul{
+	/* position: relative; */
+	width: 100%;
+	overflow: hidden;
+}
+.feature-mar li{
+	/* position: absolute; */
+	float: left;
+	width: 50%;
+}
+.feature-mar a{
+	display: block;
+	width: 100%;
+}
+.feature-mar img{
+
+	/* display: block; */
+	width: 100%;
+}
+/* 主题街 */
+.theme {
+	width: 100%;
+}
+.theme ul{
+	width: 100%;
+	overflow: hidden;
+}
+.theme li:first-child{
+	float: left;
+	width: 50%;
+}
+.theme li:nth-child(2){
+	float: left;
+	width: 50%;
+}
+.theme li:nth-child(3){
+	float: left;
+	width: 25%;
+}
+.theme li:nth-child(4){
+	float: left;
+	width: 25%;
+}
+.theme a{
+	display: block;
+	width: 100%;
+}
+.theme img{
+	width: 100%;
+}
+
+
+/* 底部栏 */
+.jdm-footbar{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 44px;
+	border: 1px solid #f7f7f7;
+	box-sizing:border-box;
+	background:#fff;
+	z-index: 10;
+	
+}
+.jdm-footbar ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.jdm-footbar li{
+	flex:1;
+	height: 40px;
+}
+.jdm-footbar a{
+	display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.jdm-footbar img{
+	width: auto;
+	height: 44px;
+}
+
+
+
